@@ -1,27 +1,19 @@
-# Mystore
+Requirements to Setup Local
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+Angular development environment should include the following:
 
-## Development server
+•	Angular CLI: 9.1 or later.
+•	node.js: 10.14.1 or later, < 13.0. The most recent 12.x version is recommended.
+•	yarn: 1.15 or later
+•	Visual Studio
+•	SAP Commerce Cloud Instance – 1905 or higher
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Following are the steps to create sample project and add Spartacus libraries
+	ng new <project-name> --style=scss   ##Create new Angular project with default SCSS styles (Eg: project-name : hybris -angular-client
+	cd <project-name>
+	code .   # #code will be open in Visual Studio to edit app
+	ng add @spartacus/schematics --baseUrl  https://localhost:9002  --baseSite electronics-spa
+Use following command to add base URL if want to connect public instance.
+	ng add @spartacus/schematics --baseUrl  https://api.c39j2-walkersde1-d3-public.model-t.cc.commerce.ondemand.com --baseSite  electronics-spa
+	ng serve
+	open http://localhsot:4200
