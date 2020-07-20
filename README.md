@@ -1,6 +1,6 @@
 <b>Requirements to Setup Local </b>
 
-<p>Angular development environment should include the following:</p>
+<p>Angular development environment should be install following softwares:</p>
 
 •	Angular CLI: 9.1 or later.<br>
 •	node.js: 10.14.1 or later, < 13.0. The most recent 12.x version is recommended <br>
